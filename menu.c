@@ -8,7 +8,7 @@ void __interrupt() isr(){
     TMR0IF = 0 ;
     overflow_count++ ;
     
-    if(overflow_count >= 45){
+    if(overflow_count >= 76){
         overflow_count = 0 ;
     
         if(blocked_seconds > 0){
