@@ -68,7 +68,7 @@ void write_external_eeprom(unsigned char addr, unsigned char data) {
     
     // CRITICAL: External EEPROMs need about 5ms to physically write data to memory!
     // If I try to read or write again immediately, the chip will ignore you.
-    __delay_ms(10); 
+    __delay_ms(5); 
 }
 
 unsigned char read_external_eeprom(unsigned char addr) {
